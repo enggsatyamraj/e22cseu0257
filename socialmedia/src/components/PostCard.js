@@ -3,7 +3,6 @@
 // src/components/PostCard.js
 import React from 'react';
 import { Card, CardContent, UserAvatar } from './ui';
-import PlaceholderImage from './ui/PlaceholderImage';
 
 export default function PostCard({ post, user, commentCount = 0 }) {
     // Generate a consistent color for the post based on its ID
@@ -56,13 +55,13 @@ export default function PostCard({ post, user, commentCount = 0 }) {
 
                 {/* Visual representation of the post */}
                 <div className="flex justify-center bg-gray-50">
-                    <PlaceholderImage
+                    {/* <PlaceholderImage
                         width={400}
                         height={200}
                         text={getPlaceholderText(post.content)}
                         bgColor={getPostColor(post.id)}
                         className="w-full"
-                    />
+                    /> */}
                 </div>
 
                 <div className="p-3 border-t border-gray-200 bg-white">
